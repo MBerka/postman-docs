@@ -79,7 +79,7 @@ To add and test a custom rule, do the following:
 
 1. Define the custom rule in the editor. It must adhere to [custom rule guidelines](/docs/api-governance/configurable-rules/spectral/). Errors will display at the bottom of the editor if they're found in the custom governance rule.
 
-    You can use a curated list of commonly-used property-value pair snippets to write your rules. Select **<** in the right sidebar to show the snippets. Selecting a snippet adds the property-value pair automatically to your rule, helping you get started quickly with writing rules. Once added to your rule, you can edit the snippets to meet your specific requirements.
+    You can use a curated list of commonly-used property-value pair snippets to write your rules. Select **<** in the middle pane to show the snippets. Selecting a snippet adds the property-value pair automatically to your rule, helping you get started quickly with writing rules. Once added to your rule, you can edit the snippets to meet your specific requirements.
 
     > Postman will prompt you with suggestions as you enter text. Select one to autocomplete your rule.
 
@@ -150,9 +150,9 @@ You can edit custom governance rules you created earlier. You can also test whet
 
 ## Testing custom rules
 
-When you [add a custom rule](#adding-custom-rules) or [edit a custom rule](#editing-custom-rules), you can test whether an API definition in OpenAPI format violates your custom rule.
+When you [add a custom rule](#adding-custom-rules) or [edit a custom rule](#editing-custom-rules), you can add an API definition to the editor to test a custom rule in your team. The API definition must be in OpenAPI format.
 
-In the custom rule editor, select the test rule icon <img alt="Console icon" src="https://assets.postman.com/postman-docs/icon-console-v9.jpg#icon" width="16px"> in the right sidebar, then add an API definition in OpenAPI format. You can add an API definition as follows:
+In the custom rule editor, select the test rule icon <img alt="Console icon" src="https://assets.postman.com/postman-docs/icon-console-v9.jpg#icon" width="16px"> in the right pane, then add an API definition in OpenAPI format. You can add an API definition as follows:
 
 * Select **Select API from workspace** to open an API definition from a workspace in your team. Choose an API, then select **Evaluate API**. Any changes to the API definition in the editor won't affect your original API definition.
 * Paste raw text or a URL to the API definition file in YAML or JSON format.
