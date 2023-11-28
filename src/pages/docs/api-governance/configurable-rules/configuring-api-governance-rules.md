@@ -28,7 +28,7 @@ You can customize the API Governance rules that Postman applies to your [API def
 
 [Super Admins](/docs/collaborating-in-postman/roles-and-permissions/#team-roles) and [API Governance Managers](/docs/collaborating-in-postman/roles-and-permissions/#team-roles) can configure rules and turn them on and off for workspaces within your team.
 
-<img alt="API governance dashboard" src="https://assets.postman.com/postman-docs/v10/api-governance-dashboard-v10.jpg"/>
+<img alt="API governance dashboard" src="https://assets.postman.com/postman-docs/v10/api-governance-dashboard-v10.jpg"/> <!-- TODO: update screenshot -->
 
 ## Contents
 
@@ -77,9 +77,9 @@ To add and test a custom rule, do the following:
 
     > If you upload two or more rule files using the **Upload File(s)** option, the rules will be combined into a single custom governance rule.
 
-1. Define the custom rule in the editor. It must adhere to [custom rule guidelines](/docs/api-governance/configurable-rules/spectral/).
+1. Define the custom rule in the editor. It must adhere to [custom rule guidelines](/docs/api-governance/configurable-rules/spectral/). Errors will display at the bottom of the editor if they're found in the custom governance rule.
 
-    You can use a curated list of commonly-used property-value pair snippets to write your rules. Snippets are available in the right pane of the editor. Selecting a snippet adds the property-value pair automatically to your rule, helping you get started quickly with writing rules. Once added to your rule, you can edit the snippets to meet your specific requirements.
+    You can use a curated list of commonly-used property-value pair snippets to write your rules. Select **<** in the right sidebar to show the snippets. Selecting a snippet adds the property-value pair automatically to your rule, helping you get started quickly with writing rules. Once added to your rule, you can edit the snippets to meet your specific requirements.
 
     > Postman will prompt you with suggestions as you enter text. Select one to autocomplete your rule.
 
@@ -91,7 +91,7 @@ To add and test a custom rule, do the following:
 
 1. Select **Create Rule**. You can find your new rule under **Created by your team**.
 
-    <img alt="Create a custom API Governance rule" src="https://assets.postman.com/postman-docs/v10/api-governance-create-custom-rule-v10-2.jpg"/> <!-- TODO: update screenshot -->
+    <img alt="Create a custom API Governance rule" src="https://assets.postman.com/postman-docs/v10/api-governance-create-custom-rule-v10-21.jpg"/>
 
 1. Once you add a custom rule, add the rule to a workspace group to [turn it on](#turning-configured-rules-on-and-off) for the workspaces in the group.
 
@@ -109,7 +109,7 @@ To add governance rules to all workspaces in your team, do the following:
 1. Select the default **All workspaces** workspace group, then select **Add Rules**.
 1. Select the checkbox next to governance rules to add them to the workspace group. You can search for governance rules by rule name, and filter them by severity and source.
 
-    <img alt="Turn individual rules on and off" src="https://assets.postman.com/postman-docs/api-governance-turn-rules-on-off-10.12.0.jpg"/>
+    <img alt="Turn individual rules on and off" src="https://assets.postman.com/postman-docs/v10/api-governance-turn-rules-on-off-v10-21.jpg"/>
 
 1. Select **Review Changes**.
 1. Review your changes, then select **Apply Changes** to confirm. Rules added to the **All workspaces** workspace group will be applied to all workspaces in your team.
@@ -122,11 +122,11 @@ To create a workspace group and add governance rules to it, do the following:
 
     To search for workspaces by name, select **Search workspaces**, then enter your search terms. To filter workspaces by [workspace tags](/docs/collaborating-in-postman/using-workspaces/managing-workspaces/#tagging-a-workspace), select the **Filter by tags:** dropdown, then select the checkbox next to each tag you'd like to filter by. If you select more than one tag, the results show workspaces with at least one of the selected tags.
 
-    <!-- TODO: add screenshot -->
+    <img alt="Add workspaces to a workspace group" src="https://assets.postman.com/postman-docs/v10/api-governance-add-workspaces-to-group-v10-21.jpg"/>
 
 1. Select **Add Rules** to add governance rules to the workspace group. Select the checkbox next to governance rules to add them to the workspace group. You can search for governance rules by rule name, and filter them by severity and source.
 
-    <img alt="Turn individual rules on and off" src="https://assets.postman.com/postman-docs/api-governance-turn-rules-on-off-10.12.0.jpg"/>
+    <img alt="Turn individual rules on and off" src="https://assets.postman.com/postman-docs/v10/api-governance-turn-rules-on-off-v10-21.jpg"/>
 
 1. Select **Review Changes**.
 1. Review your changes, then select **Apply Changes** to confirm. Rules added to the workspace group will be applied to the added workspaces.
@@ -142,7 +142,7 @@ You can edit custom governance rules you created earlier. You can also test whet
 1. Select the **Rule Library** tab, and then select the **Rules** tab.
 1. Under **Created by your team**, select the name of the custom rule you'd like to edit.
 
-    <img alt="Create a custom API Governance rule" src="https://assets.postman.com/postman-docs/v10/edit-custom-governance-rule-v10.jpg"/>
+    <img alt="Create a custom API Governance rule" src="https://assets.postman.com/postman-docs/v10/edit-custom-governance-rule-v10.jpg"/> <!-- TODO: update screenshot -->
 
 1. Edit the custom rule in the editor.
 1. Optionally, you can [test whether an API definition violates your custom rule](#testing-custom-rules).
@@ -154,13 +154,15 @@ When you [add a custom rule](#adding-custom-rules) or [edit a custom rule](#edit
 
 In the custom rule editor, select the test rule icon <img alt="Console icon" src="https://assets.postman.com/postman-docs/icon-console-v9.jpg#icon" width="16px"> in the right sidebar, then add an API definition in OpenAPI format. You can add an API definition as follows:
 
-* Select **Choose API from workspace** to open an API definition from a workspace in your team. Choose an API, then select **Evaluate API**. Any changes to the API definition in the editor won't affect your original API definition.
+* Select **Select API from workspace** to open an API definition from a workspace in your team. Choose an API, then select **Evaluate API**. Any changes to the API definition in the editor won't affect your original API definition.
 * Paste raw text or a URL to the API definition file in YAML or JSON format.
 * Drag and drop an API definition file, or upload a file in YAML or JSON format.
 
-<!-- TODO: add screenshot -->
+<img alt="Test a custom rule with an API definition" src="https://assets.postman.com/postman-docs/v10/api-governance-test-custom-rule-v10-21-b.jpg"/>
 
 Syntax errors and rule violations will display at the bottom of the editor if they're found in the API definition.
+
+<img alt="Select an API definition to test a custom rule" src="https://assets.postman.com/postman-docs/v10/api-governance-select-api-definition-v10-21-b.jpg"/>
 
 To test your custom rule with a different API definition, select **Use Another API** in the top right of the editor.
 
