@@ -48,7 +48,7 @@ You can customize the API Governance rules that Postman applies to your [API def
 
 ## Adding rules to your API Governance configuration
 
-In addition to the rules turned on by default in Postman, you can add other rules to your team's rule library from the rule library. You can also create your own custom rules.
+In addition to the rules turned on by default in Postman, you can add other rules to your team's rule library from the rule library. You can also create your own custom rules for API definitions in OpenAPI format.
 
 ### Importing rules from the rule library
 
@@ -66,7 +66,7 @@ The rule library has Postman's API governance guidelines, Zalando's RESTful API 
 
 ### Adding custom rules
 
-You can create new custom governance rules for Postman to evaluate your API's definition. Postman provides you with a boilerplate rule to help you start writing your custom governance rules. You can use snippets of commonly-used property-value pairs to help you write your custom governance rules.
+You can create new custom governance rules for Postman to evaluate your API's definition in OpenAPI format. Postman provides you with a boilerplate rule to help you start writing your custom governance rules. You can use snippets of commonly-used property-value pairs to help you write your custom governance rules.
 
 Once you've written a custom governance rule, you can also add an API definition in OpenAPI format to the editor. This enables you to test whether the API definition violates your custom governance rule.
 
