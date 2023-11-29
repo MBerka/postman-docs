@@ -714,7 +714,7 @@ channels:
 
 #### Issue
 
-No `examples` is defined in the `ReusableMessageTrait` message trait.
+An example isn't defined in the message trait object.
 
 ```yaml
 asyncapi: 2.6.0
@@ -736,7 +736,7 @@ components:
 
 #### Resolution
 
-A non empty `examples` is defined in the `ReusableMessageTrait` message trait.
+An example is defined in the message trait object.
 
 ```yaml
 asyncapi: 2.6.0
@@ -892,7 +892,7 @@ components:
 
 #### Issue
 
-A description isn't defined in the property.
+A description isn't defined in the schema property.
 
 ```yaml
 asyncapi: 2.6.0
@@ -912,7 +912,7 @@ components:
 
 #### Resolution
 
-A description is defined in the property.
+A description is defined in the schema property.
 
 ```yaml
 asyncapi: 2.6.0
