@@ -28,7 +28,7 @@ You can customize the API Governance rules that Postman applies to your [API def
 
 [Super Admins](/docs/collaborating-in-postman/roles-and-permissions/#team-roles) and [API Governance Managers](/docs/collaborating-in-postman/roles-and-permissions/#team-roles) can configure rules and turn them on and off for workspaces within your team.
 
-<img alt="API governance dashboard" src="https://assets.postman.com/postman-docs/v10/api-governance-dashboard-v10.jpg"/> <!-- TODO: update screenshot -->
+<img alt="API governance dashboard" src="https://assets.postman.com/postman-docs/v10/api-governance-dashboard-v10-21.jpg"/>
 
 ## Contents
 
@@ -141,9 +141,6 @@ You can edit custom governance rules you created earlier. You can also test whet
 
 1. Select the **Rule Library** tab, and then select the **Rules** tab.
 1. Under **Created by your team**, select the name of the custom rule you'd like to edit.
-
-    <img alt="Create a custom API Governance rule" src="https://assets.postman.com/postman-docs/v10/edit-custom-governance-rule-v10.jpg"/> <!-- TODO: update screenshot -->
-
 1. Edit the custom rule in the editor.
 1. Optionally, you can [test whether your custom rule catches violations in an API definition](#testing-custom-rules).
 1. Select **Save Changes**.
