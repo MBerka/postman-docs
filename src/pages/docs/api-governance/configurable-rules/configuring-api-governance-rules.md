@@ -73,7 +73,7 @@ You can also add an API definition to the editor in OpenAPI format, enabling you
 To add and test a custom rule, do the following:
 
 1. Select the **Rule Library** tab, and then select the **Rules** tab.
-1. Select **Create Rule** dropdown menu. You can select **Create New** to create a new rule from scratch. You can also select **Upload File(s)** to upload one or more rule files in valid YAML or JSON format.
+1. Select the **Create Rule** dropdown list. You can select **Create New** to create a new rule from scratch. You can also select **Upload File(s)** to upload one or more rule files in valid YAML or JSON format.
 
     > If you upload two or more rule files using the **Upload File(s)** option, the rules will be combined into a single custom governance rule.
 
