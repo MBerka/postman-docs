@@ -104,18 +104,18 @@ You can turn individual governance rules on or off for various workspaces to mee
 
 Your team will only see violations in your API's definition for the governance rules explicitly applied to the workspace it resides in.
 
-To add governance rules to all workspaces in your team, do the following:
+To turn governance rules on for all workspaces in your team, do the following:
 
 1. Select the **Workspace Groups** tab.
-1. Select the default **All workspaces** workspace group, then select **Add Rules**. If there are already rules added to the workspace group, select **Edit** to add or delete rules.
-1. Select the checkboxes next to governance rules to add them to the workspace group. You can search for governance rules by rule name, and filter them by severity and source.
+1. Select the default **All workspaces** workspace group, then select **Add Rules**. If there are already rules turned on for the workspace group, select **Edit** to turn more governance rules on.
+1. Select the checkboxes next to governance rules to turn them on for workspaces in the group. You can search for governance rules by rule name, and filter them by severity and source.
 
     <img alt="Turn individual rules on and off" src="https://assets.postman.com/postman-docs/v10/api-governance-turn-rules-on-off-v10-21.jpg"/>
 
 1. Select **Review Changes**.
-1. Review your changes, then select **Apply Changes** to confirm. Rules added to the **All workspaces** workspace group will be applied to all workspaces in your team.
+1. Review your changes, then select **Apply Changes** to confirm. Rules turned on for the **All workspaces** workspace group will be applied to all workspaces in your team.
 
-To create a workspace group, and add workspaces and governance rules to it, do the following:
+To create a workspace group, add workspaces to it, and turn governance rules on for the workspaces, do the following:
 
 1. Select the **Workspace Groups** tab, then select **Create Group**.
 1. Enter a name for the workspace group.
@@ -125,12 +125,12 @@ To create a workspace group, and add workspaces and governance rules to it, do t
 
     <img alt="Add workspaces to a workspace group" src="https://assets.postman.com/postman-docs/v10/api-governance-add-workspaces-to-group-v10-21.jpg"/>
 
-1. Select **Add Rules**, then select the checkboxes next to the governance rules you want to add. You can search for governance rules by rule name, and filter them by severity and source.
+1. Select **Add Rules**, then select the checkboxes next to the governance rules you want to turn on. You can search for governance rules by rule name, and filter them by severity and source.
 
     <img alt="Turn individual rules on and off" src="https://assets.postman.com/postman-docs/v10/api-governance-turn-rules-on-off-v10-21.jpg"/>
 
 1. Select **Review Changes**.
-1. Review your changes, then select **Apply Changes** to confirm. Rules added to the workspace group will be applied to the added workspaces.
+1. Review your changes, then select **Apply Changes** to confirm. Rules turned on for the workspace group will be applied to the added workspaces.
 
 To edit the workspaces added to a workspace group, select an existing workspace group, then select **Edit** under **Workspaces**. To add workspaces, select the checkboxes next to the workspaces. To remove workspaces, clear the checkboxes next to the workspaces.
 
