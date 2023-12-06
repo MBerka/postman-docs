@@ -70,28 +70,29 @@ You can create new custom governance rules for Postman to evaluate your API's de
 
 You can also add an API definition to the editor in OpenAPI format, enabling you to test whether your custom rule catches violations in the API definition.
 
+> You can write and add custom functions to your custom governance rules. For more information, see [Adding custom governance functions](/docs/api-governance/configurable-rules/configuring-custom-governance-functions/).
+
 To add and test a custom rule, do the following:
 
 1. Select the **Rule Library** tab, and then select the **Rules** tab.
 1. Select the **Create Rule** dropdown list. You can select **Create New** to create a new rule from scratch. You can also select **Upload File(s)** to upload one or more rule files in valid YAML or JSON format.
-
-    > If you upload two or more rule files using the **Upload File(s)** option, the rules will be combined into a single custom governance rule.
-
 1. Define the custom rule in the editor. It must adhere to [custom rule guidelines](/docs/api-governance/configurable-rules/spectral/). Errors will display at the bottom of the editor if they're found in the custom governance rule.
 
     You can use a curated list of commonly-used property-value pair snippets to write your rules. Select **<** in the middle pane to show the snippets. Selecting a snippet adds the property-value pair automatically to your rule, helping you get started quickly with writing rules. Once added to your rule, you can edit the snippets to meet your specific requirements.
+
+    <img alt="Show snippets for a custom API Governance rule" src="https://assets.postman.com/postman-docs/v10/api-governance-create-custom-rule-v10-21.jpg"/>
 
     > Postman will prompt you with suggestions as you enter text. Select one to autocomplete your rule.
 
     <!-- -->
 
-    > You can write and add custom functions to your custom governance rules. For more information, see [Adding custom governance functions](/docs/api-governance/configurable-rules/configuring-custom-governance-functions/).
+    > If you add two or more rules to the editor, each rule will be created as its own custom governance rule.
 
 1. Optionally, you can [test whether your custom rule catches violations in an API definition](#testing-custom-rules).
 
 1. Select **Create Rule**. You can find your new rule under **Created by your team**.
 
-    <img alt="Create a custom API Governance rule" src="https://assets.postman.com/postman-docs/v10/api-governance-create-custom-rule-v10-21.jpg"/>
+    <img alt="Create a custom API Governance rule" src="https://assets.postman.com/postman-docs/v10/api-governance-create-custom-rule-and-test-v10-21.jpg"/>
 
 1. Once you add a custom rule, add the rule to a workspace group to [turn it on](#turning-configured-rules-on-and-off) for the workspaces in the group.
 
@@ -149,19 +150,19 @@ You can edit custom governance rules you created earlier. You can also test whet
 
 When you [add a custom rule](#adding-custom-rules) or [edit a custom rule](#editing-custom-rules), you can test whether your custom rule catches violations in an API definition. If you want to enforce a specific rule in your team, you can add an API definition that has violations to test whether your rule catches them. You can also edit an API definition in the editor to trigger rule violations, enabling you to test whether your rule catches the new violations. Your API definition must be in OpenAPI format.
 
-In the custom rule editor, select the test rule icon <img alt="Console icon" src="https://assets.postman.com/postman-docs/icon-console-v9.jpg#icon" width="16px"> in the right pane, then add an API definition in OpenAPI format. You can add an API definition as follows:
+In the test rule editor in the right pane, select or enter an API definition in OpenAPI format. You can select or enter an API definition as follows:
 
 * Select **Select API from workspace** to open an API definition from a workspace in your team. Choose an API, then select **Evaluate API**. Any changes to the API definition in the editor won't affect your original API definition.
 * Paste raw text or a URL to the API definition file in YAML or JSON format.
 * Drag and drop an API definition file, or upload a file in YAML or JSON format.
 
-<img alt="Test a custom rule with an API definition" src="https://assets.postman.com/postman-docs/v10/api-governance-test-custom-rule-v10-21-b.jpg"/>
+<img alt="Test a custom rule with an API definition" src="https://assets.postman.com/postman-docs/v10/api-governance-test-custom-rule-v10-21-c.jpg"/>
 
 Syntax errors and rule violations will display at the bottom of the editor if they're found in the API definition.
 
-<img alt="Select an API definition to test a custom rule" src="https://assets.postman.com/postman-docs/v10/api-governance-select-api-definition-v10-21-b.jpg"/>
+<img alt="Select an API definition to test a custom rule" src="https://assets.postman.com/postman-docs/v10/api-governance-select-api-definition-v10-21-c.jpg"/>
 
-To test your custom rule with a different API definition, select **Use Another API** in the top right of the editor, then add a new API definition.
+To test your custom rule with a different API definition, select **Use Another API** in the top right of the editor, then select or enter a new API definition.
 
 ## Removing rules from your API Governance configuration
 
