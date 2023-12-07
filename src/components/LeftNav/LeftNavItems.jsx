@@ -363,39 +363,35 @@ export const leftNavItems = [
         ],
       },
       {
-        name: 'Send GraphQL requests',
+        name: 'GraphQL',
         subParentSlug: 'graphql',
         slug: '/docs/sending-requests/graphql/graphql-overview/',
         subMenuItems2: [
           {
-            name: 'GraphQL queries',
+            name: 'Overview',
             url: '/docs/sending-requests/graphql/graphql-overview/',
           },
           {
-            name: 'GraphQL client',
-            url: '/docs/sending-requests/graphql/graphql-client-overview/',
-          },
-          {
-            name: 'GraphQL interface',
-            url: '/docs/sending-requests/graphql/graphql-client-interface/',
-          },
-          {
-            name: 'Create a GraphQL query',
+            name: 'Create GraphQL requests',
             url: '/docs/sending-requests/graphql/graphql-client-first-request/',
           },
           {
-            name: 'Make an HTTP call with GraphQL',
+            name: 'The GraphQL interface',
+            url: '/docs/sending-requests/graphql/graphql-client-interface/',
+          },
+          {
+            name: 'Other GraphQL requests',
             url: '/docs/sending-requests/graphql/graphql-http/',
           },
         ]
       },
       {
-        name: 'Send gRPC requests',
+        name: 'gRPC',
         subParentSlug: 'grpc',
         slug: '/docs/sending-requests/grpc/grpc-client-overview/',
         subMenuItems2: [
           {
-            name: 'Manage gRPC APIs',
+            name: 'Overview',
             url: '/docs/sending-requests/grpc/grpc-client-overview/',
           },
           {
@@ -437,12 +433,12 @@ export const leftNavItems = [
         ],
       },
       {
-        name: 'Send WebSocket requests',
+        name: 'WebSocket',
         subParentSlug: 'websocket',
         slug: '/docs/sending-requests/websocket/websocket-overview/',
         subMenuItems2: [
           {
-            name: 'Make WebSocket requests with Postman',
+            name: 'Overview',
             url: '/docs/sending-requests/websocket/websocket-overview/'
           },
           {
@@ -1476,11 +1472,11 @@ export const leftNavItems = [
             url: '/docs/api-governance/api-definition/api-definition-warnings/',
           },
           {
-            name: 'OpenAPI 3.0 rules',
+            name: 'OpenAPI 3 rules',
             url: '/docs/api-governance/api-definition/openapi3/',
           },
           {
-            name: 'OpenAPI 2.0 rules',
+            name: 'OpenAPI 2 rules',
             url: '/docs/api-governance/api-definition/openapi2/',
           },
         ],
