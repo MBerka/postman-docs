@@ -28,15 +28,15 @@ const EarlyAccessList = () => (
         const location = useLocation();
         
         return (
-          <div key={uuidv4()}>
+          <div>
             <ul className="mb-5">
               {earlyAccessPages.map(edge => (
-                <>
+                <div key={uuidv4()}>
                 {/* Do not show the current page in the list */}
                 {edge.node.fields.slug === location.pathname ? null : 
                   <li key={uuidv4()}><a href={edge.node.fields.slug}>{edge.node.frontmatter.title}</a></li>
                 }
-                </>
+                </div>
               ))}
             </ul>
           </div>
