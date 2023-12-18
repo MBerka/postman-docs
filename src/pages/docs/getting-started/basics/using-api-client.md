@@ -33,7 +33,7 @@ All of your work in the lightweight API Client is stored locally and isn't synce
 
 When you open the Postman desktop app for the first time, you can create a free Postman account or sign in to your Postman account. If you choose to skip creating or signing in to an account, you will enter the lightweight API Client. You'll also enter the lightweight API Client if you sign out of Postman.
 
-<img alt="Postman lightweight API Client" src="https://assets.postman.com/postman-docs/v10/api-client-v10-14.jpg">
+<img alt="Postman lightweight API Client" src="https://assets.postman.com/postman-docs/v10/api-client-v10-21.jpg">
 
 ## Lightweight API Client features
 
@@ -43,7 +43,7 @@ While you're in the lightweight API Client, you can create new requests, send re
 
     > You can change the request type by selecting the icon next to the request name.
     >
-    > <img alt="Switching the request type" src="https://assets.postman.com/postman-docs/v10/api-client-switch-request-type-v10-14.jpg" width="320px">
+    > <img alt="Switching the request type" src="https://assets.postman.com/postman-docs/v10/api-client-switch-request-type-v10-21.jpg" width="213px">
 
 * Select **Send** to send a request and view the response. Learn more about [receiving responses](/docs/sending-requests/responses/).
 

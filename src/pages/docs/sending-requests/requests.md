@@ -33,7 +33,7 @@ For example, if you're building a client application (such as a mobile or web ap
 
 When you send a request, Postman displays the response received from the API server in a way that lets you examine, visualize, and if necessary troubleshoot it.
 
-<img alt="Request builder with a successful response" src="https://assets.postman.com/postman-docs/v10/postman-request-builder-v10-3.jpg" />
+<img alt="Request builder with a successful response" src="https://assets.postman.com/postman-docs/v10/postman-request-builder-v10-21-2.jpg" />
 
 If you have never sent a request before, check out [sending your first request](/docs/getting-started/first-steps/sending-the-first-request/) before you continue.
 
@@ -69,7 +69,7 @@ Select **Save** to create your request. You can give your request a name and des
 
 Once your new tab is open, you can specify the details you need for your request.
 
-<img alt="New Request" src="https://assets.postman.com/postman-docs/v10/empty-request-v10-2.jpg" />
+<img alt="New request" src="https://assets.postman.com/postman-docs/v10/empty-request-v10-21.jpg" />
 
 > You can turn on autosave to automatically save your changes to collections, requests, and environments. Learn more about [autosave](/docs/getting-started/installation/settings/#application).
 
@@ -85,7 +85,7 @@ You can change the protocol for a new request. Select **New** in the sidebar and
 
 > You can't change the request protocol after you select **Save**.
 
-<img alt="Select protocol" src="https://assets.postman.com/postman-docs/v10/select-protocol-v10-4.gif" />
+<img alt="Select protocol" src="https://assets.postman.com/postman-docs/v10/select-protocol-v10-21-2.gif" />
 
 ### Setting request URLs
 
@@ -111,7 +111,7 @@ By default, Postman will select the `GET` method for new request. `GET` methods 
 * `PATCH` - update some existing data fields
 * `DELETE` - delete existing data
 
-<img alt="Request Methods" src="https://assets.postman.com/postman-docs/v10/request-methods-v10-2.jpg" width="340px"/>
+<img alt="Request Methods" src="https://assets.postman.com/postman-docs/v10/request-methods-v10-21.jpg" width="250px"/>
 
 For example, if you're working with an API for a To Do list application, you might use a `GET` method to retrieve the current list of tasks, a `POST` method to create a new task, and a `PUT` or `PATCH` method to edit an existing task.
 
@@ -138,7 +138,7 @@ To send a query parameter, add it directly to the URL or open __Params__ and ent
 
 To send a path parameter, enter the parameter name into the URL field, after a colon, for example `:id`. When you enter a path parameter, Postman will populate it in the __Params__ tab, where you can also edit it.
 
-![Path Parameter](https://assets.postman.com/postman-docs/v10/path-param-v10.jpg)
+![Path parameter](https://assets.postman.com/postman-docs/v10/path-param-v10.jpg)
 
 You can add descriptions to your parameters and they'll appear for anyone sharing the request (for example in your workspace) or viewing your API documentation.
 
@@ -183,7 +183,7 @@ URL-encoded data uses the same encoding as URL parameters. If your API requires 
 
 You can use raw body data to send anything you can enter as text. Use the __raw__ tab, and the type dropdown list to indicate the format of your data (__Text__, __JavaScript__, __JSON__, __HTML__, or __XML__) and Postman will enable syntax-highlighting and appending the relevant headers to your request.
 
-<img alt="Body JSON" src="https://assets.postman.com/postman-docs/v10/body-raw-data-v10-2.jpg" />
+<img alt="Body JSON" src="https://assets.postman.com/postman-docs/v10/body-raw-data-v10-21-2.jpg" />
 
 > You can set a content type header manually if you need to override the one Postman sends automatically.
 
