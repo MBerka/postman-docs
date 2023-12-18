@@ -210,7 +210,7 @@ To manage your open tabs, right-click the open tab to activate a menu with actio
 
 If you have a lot of tabs open, they might overflow the area of the tab bar. To go to tabs that are outside the viewable area, select the arrows next to the tab bar.
 
-<img alt="Scroll to view tabs" src="https://assets.postman.com/postman-docs/v10/tab-navigation-scroll-v10-21.jpg" width="869px"/>
+<img alt="Scroll to view tabs" src="https://assets.postman.com/postman-docs/v10/tab-navigation-scroll-v10-21.jpg" "/>
 
 #### Tab search
 
