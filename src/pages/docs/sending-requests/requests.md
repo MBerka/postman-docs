@@ -138,7 +138,7 @@ To send a query parameter, add it directly to the URL or open __Params__ and ent
 
 To send a path parameter, enter the parameter name into the URL field, after a colon, for example `:id`. When you enter a path parameter, Postman will populate it in the __Params__ tab, where you can also edit it.
 
-![Path parameter](https://assets.postman.com/postman-docs/v10/path-param-v10.jpg)
+![Path parameter](https://assets.postman.com/postman-docs/v10/path-param-v10-21.jpg)
 
 You can add descriptions to your parameters and they'll appear for anyone sharing the request (for example in your workspace) or viewing your API documentation.
 
