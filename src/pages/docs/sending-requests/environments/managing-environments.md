@@ -79,7 +79,7 @@ To add variables to an environment, do the following:
 
 1. To add a new variable, select the bottom row of the table and enter a **Variable** name.
 
-    ![Environment editor](https://assets.postman.com/postman-docs/v10/environment-editor-v10-20.jpg)
+    ![Add environment variable](https://assets.postman.com/postman-docs/v10/add-environment-variable-v10-21.jpg)
 
 1. Select a variable **Type**. If you select **default** the variable value is visible in plain text. If you select **secret** the variable value is masked.
 
