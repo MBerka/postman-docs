@@ -34,13 +34,13 @@ Create a Flow that gets a list of customer profiles from [Stripe](http://www.str
 
 ## Create the Flow
 
-The first step is to [fork](/docs/collaborating-in-postman/using-version-control/forking-entities/) (copy) the collections and the environment the Flow will use, then add your API keys to the environment. You could create these requests, collections, and environment, but using existing ones saves time. From the [**Integration Flows** public workspace](https://www.postman.com/postman/workspace/integration-flows/flows), fork the **Brevo API** collection, the **Stripe API** collection, and the **Stripe + Brevo** environment to your workspace.
+The first step is to [fork](/docs/collaborating-in-postman/using-version-control/forking-elements/) (copy) the collections and the environment the Flow will use, then add your API keys to the environment. You could create these requests, collections, and environment, but using existing ones saves time. From the [**Integration Flows** public workspace](https://www.postman.com/postman/workspace/integration-flows/flows), fork the **Brevo API** collection, the **Stripe API** collection, and the **Stripe + Brevo** environment to your workspace.
 
 > Creating requests is beyond the scope of this tutorial, but you can learn more about creating requests [here](/docs/getting-started/first-steps/sending-the-first-request/).
 
 The collections contain the requests that will get all the customer profiles from the Stripe API in a single response, divide the response into pages, and post the profiles to the Brevo API as contacts. The collections and the environment also contain variables used by the requests.
 
-<img alt="Fork the collections and environment" src="https://assets.postman.com/postman-docs/v10/flows-tut-system-fork-v10.gif" fetchpriority="low" loading="lazy"/>
+<img alt="Fork the collections" src="https://assets.postman.com/postman-docs/v10/flows-tut-system-fork-v10-1.gif" fetchpriority="low" loading="lazy"/>
 
 Create a new Flow and add a **Send Request** block, then add a GET request by selecting **Select a request > Stripe API > Customers > List all customers**. Select **Add environment > Stripe + Brevo**. The **Send Request** block shows three variables, provided by the GET request. The `baseUrl` and `stripe_secret_key` variables are populated automatically from values stored in the request’s collection and environment. You can hover over them to see their values and scope. For the `limit` variable, enter `5` to specify how many contacts to include in each page of results. This tutorial uses 15 contacts, so a limit of 5 will send three pages of results.
 

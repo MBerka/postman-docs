@@ -1,6 +1,6 @@
 ---
 title: "SCIM provisioning overview"
-updated: 2023-10-19
+updated: 2023-12-15
 contextual_links:
   - type: section
     name: "Additional resources"
@@ -43,7 +43,7 @@ You can enable SCIM provisioning with the [SCIM API](#configuring-scim-with-the-
 
 Postman supports the following provisioning features:
 
-* **Create user** - Creates a new user account in Postman, adds the account to your organization's Postman team, and activates authentication for the user. If an account with the same email ID exists, an [email invite](/docs/administration/managing-your-team/managing-your-team/#inviting-users) to join your Postman team is sent to the user. Once the user accepts the invite, they will be added to your team.
+* **Create user** - Creates a new user account in Postman, adds the account to your organization's Postman team, and activates authentication for the user if their email ID isn't attached to an existing Postman account. If a Postman account with the same email ID exists and it's associated with a domain your team has [verified](/docs/administration/domain-verification-and-capture/add-and-verify-a-domain/), the user will be automatically added to your team. If a Postman account with the same email ID exists and it's not associated with a verified domain, an email invite to join your Postman team is sent to the user. Once the user accepts the invite, they'll be added to your team.
 
     > The newly added user will have the Developer role in Postman by default. You can later [update account roles in Postman](/docs/administration/managing-your-team/managing-your-team/#managing-team-roles).
 
@@ -61,7 +61,7 @@ Postman supports the following provisioning features:
 
 * **Create group** - Creates a new [user group](/docs/collaborating-in-postman/user-groups/) in Postman. When you assign the Postman app to a group, Postman creates a new account for each user, adds each account to your organization's Postman team, and activates authentication for each user. If an existing Postman account uses an email that matches a user's email ID, an [email invite](/docs/administration/managing-your-team/managing-your-team/#inviting-users) to join your Postman team is sent to that user. Once the user accepts the invite, they'll be added to your team.
 
-    > Newly created groups will have the Developer role in Postman by default. You can later [update group roles in Postman](/docs/collaborating-in-postman/user-groups/#editing-team-roles-for-a-group) and [control a group's access to workspaces and individual Postman entities](/docs/collaborating-in-postman/user-groups/#managing-roles-on-workspaces-and-postman-entities), such as collections and APIs.
+    > Newly created groups will have the Developer role in Postman by default. You can later [update group roles in Postman](/docs/collaborating-in-postman/user-groups/#editing-team-roles-for-a-group) and [control a group's access to workspaces and individual Postman elements](/docs/collaborating-in-postman/user-groups/#managing-roles-on-workspaces-and-postman-elements), such as collections and APIs.
 
 * **Delete group** - Deletes a user group in Postman. User accounts that were part of the deleted group are deactivated in Postman.
 
@@ -73,7 +73,9 @@ Postman supports the following provisioning features:
 
     * **Update group members** - Adds or removes users from a group in Postman.
 
-        > Users in a group have the roles assigned to the group. You can [update group roles in Postman](/docs/collaborating-in-postman/user-groups/#editing-team-roles-for-a-group) and [control a group's access to workspaces and individual Postman entities](/docs/collaborating-in-postman/user-groups/#managing-roles-on-workspaces-and-postman-entities), such as collections and APIs.
+        > Users in a group have the roles assigned to the group. You can [update group roles in Postman](/docs/collaborating-in-postman/user-groups/#editing-team-roles-for-a-group) and [control a group's access to workspaces and individual Postman elements](/docs/collaborating-in-postman/user-groups/#managing-roles-on-workspaces-and-postman-elements), such as collections and APIs.
+
+    > Updating group information from Postman to your IdP isn't supported in [SCIM provisioning through Okta](/docs/administration/scim-provisioning/configuring-scim-with-okta/). If you're using Okta and you want to use this provisioning feature, use the [SCIM 2.0 Okta app](https://www.okta.com/integrations/scim-2-0-test-app-header-auth/).
 
 Postman doesn't support the following provisioning features:
 

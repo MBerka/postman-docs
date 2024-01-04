@@ -35,6 +35,8 @@ Postman provides JavaScript APIs that you can use in your request scripts. The `
         * [Request info](#scripting-with-request-info)
         * [Cookies](#scripting-with-request-cookies)
     * [Sending requests from scripts](#sending-requests-from-scripts)
+    * [Get the path and name of a request](#get-the-path-and-name-of-a-request)
+    * [Skip request execution from pre-request scripts](#skip-request-execution-from-pre-request-scripts)
 * [Scripting workflows](#scripting-workflows)
 * [Scripting Postman Visualizations](#scripting-postman-visualizations)
 * [Building response data into Postman Visualizations](#building-response-data-into-postman-visualizations)
@@ -181,7 +183,7 @@ pm.environment.unset(variableName:String):function
 pm.environment.clear():function
 ```
 
-> Note that your ability to edit variables depends on your [access level](/docs/sending-requests/managing-environments/#working-with-environments-as-a-team) in the workspace.
+> Note that your ability to edit variables depends on your [access level](/docs/sending-requests/environments/team-environments/#manage-environment-roles) in the workspace.
 
 #### Using collection variables in scripts
 
@@ -291,7 +293,7 @@ pm.globals.unset(variableName:String):function
 pm.globals.clear():function
 ```
 
-> Note that your ability to edit variables depends on your [access level](/docs/sending-requests/managing-environments/#working-with-environments-as-a-team) in the workspace.
+> Note that your ability to edit variables depends on your [access level](/docs/sending-requests/environments/team-environments/#manage-environment-roles) in the workspace.
 
 #### Using data variables in scripts
 
@@ -620,6 +622,49 @@ pm.sendRequest('https://postman-echo.com/get', (error, response) => {
 ```
 
 See the [Request definition](http://www.postmanlabs.com/postman-collection/Request.html#~definition) and [Response structure](http://www.postmanlabs.com/postman-collection/Response.html) reference docs for more detail.
+
+### Get the path and name of a request
+
+The `pm.execution.location` property enables you to get the complete path of a request, including the folder and collection, in array format. For example, for a request named **R1** in folder **F1** in collection **C1**, the following test script code will return `["C1", "F1", "R1"]`:
+
+```js
+console.log(pm.execution.location);
+// Returns the full path of a request in array format, for example:
+// ["C1", "F1", "R1"]
+```
+
+To get the name of the current element, you can use the `pm.execution.location.current` property. For example, if you add the following code to the pre-request script of a folder named **F1**, it will return `F1`:
+
+```js
+console.log(pm.execution.location.current);
+// Returns the name of the current element, for example:
+// F1
+```
+
+You can use the `pm.execution.location` and `pm.execution.location.current` properties in your scripts to understand what items are being executed when a request is sent. This information enables you to implement logic and actions in your scripts tailored to the current location within your API testing or collection structure.
+
+### Skip request execution from pre-request scripts
+
+The `pm.execution.skipRequest` method enables you to stop the execution of a request from a [pre-request script](/docs/writing-scripts/pre-request-scripts/).
+
+```js
+pm.execution.skipRequest()
+```
+
+You can use the `pm.execution.skipRequest` method on the **Pre-request Script** tab of a request, collection, or folder. When `pm.execution.skipRequest()` is encountered, the request isn't sent. Any remaining scripts on the **Pre-request Script** tab are skipped, and no tests are executed.
+
+For example:
+
+```js
+//Skip this request if an authentication token isn't present
+if (!pm.environment.get('token')) {
+    pm.execution.skipRequest()
+}
+```
+
+In the [Collection Runner](/docs/collections/running-collections/running-collections-overview/), when `pm.execution.skipRequest()` is encountered, Postman skips execution of the current request (including its test scripts) and moves to the next request in order. The run results will show no response and no tests found for the request. This same behavior also applies to [Postman Flows](/docs/postman-flows/gs/flows-overview/), [Newman](/docs/collections/using-newman-cli/command-line-integration-with-newman/), and [the Postman CLI](/docs/postman-cli/postman-cli-overview/).
+
+> Using the `pm.execution.skipRequest` method isn't supported on the **Tests** tab of a request, collection, or folder and will have no effect there. You will also get the following Console error: `TypeError: pm.execution.skipRequest is not a function`.
 
 ## Scripting workflows
 

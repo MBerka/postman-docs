@@ -36,7 +36,7 @@ contextual_links:
 
 The Postman API enables you to programmatically access data stored in your Postman account. You can use the API to perform actions such as managing your collections, APIs, workspaces, and more.
 
-> The access rate limits for your Postman API key depend on your Postman plan. For more information, see [Postman API rate limits](/docs/developer/postman-api/postman-api-rate-limits/).
+> The access rate limits for your Postman account depend on your Postman plan. For more information, see [Postman API rate limits](/docs/developer/postman-api/postman-api-rate-limits/).
 
 This tutorial shows you how to make your first call to the Postman API. You can also learn more about the Postman API by reading the [Postman API documentation](https://www.postman.com/postman/workspace/postman-public-workspace/documentation/12959542-c8142d51-e97c-46b6-bd77-52bb66712c9a). There you will find information to help you get started and information about each endpoint and operation.
 
@@ -52,7 +52,7 @@ Before you can use the Postman API, you’ll need an API key. An API key is a wa
 
 ## Store your API key as an environment variable
 
-After you create your API key, store it as a [Postman environment variable](/docs/sending-requests/managing-environments/#adding-environment-variables) named `postman-api-key`. You can use environments to store values that you can later use to make your requests.
+After you create your API key, store it as a [Postman environment variable](/docs/sending-requests/environments/managing-environments/#add-environment-variables) named `postman-api-key`. You can use environments to store values that you can later use to make your requests.
 
 For best security practices, make sure that you:
 
@@ -65,7 +65,7 @@ For your first request, use the `/me` endpoint. This is a basic GET endpoint tha
 
 ### Fork the Postman API collection
 
-Before you call the `/me` endpoint, fork the [Postman API collection](https://www.postman.com/postman/workspace/postman-public-workspace/collection/12959542-c8142d51-e97c-46b6-bd77-52bb66712c9a?ctx=documentation). [Forking](/docs/collaborating-in-postman/using-version-control/forking-entities/) creates a copy of the collection that you can change but does not affect the parent element.
+Before you call the `/me` endpoint, fork the [Postman API collection](https://www.postman.com/postman/workspace/postman-public-workspace/collection/12959542-c8142d51-e97c-46b6-bd77-52bb66712c9a?ctx=documentation). [Forking](/docs/collaborating-in-postman/using-version-control/forking-elements/) creates a copy of the collection that you can change but does not affect the parent element.
 
 1. In the Postman API collection you can find the **Fork** option in the overview tab. Select <img alt="Fork icon" src="https://assets.postman.com/postman-docs/icon-fork.jpg#icon" width="14px"> **Fork**. You can also select the more actions icon <img alt="More actions icon" src="https://assets.postman.com/postman-docs/icon-more-actions-v9.jpg#icon" width="16px"> next to the collection's name, then **Create a fork**.
 

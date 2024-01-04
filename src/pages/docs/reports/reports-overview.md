@@ -12,13 +12,11 @@ contextual_links:
     url: "https://blog.postman.com/introducing-new-postman-reports-for-enterprises/"
 ---
 
-> [__Reports are available on all Postman Enterprise plans.__](https://www.postman.com/pricing)
-
 Postman generates reports that enable you to visualize data for how your team uses Postman. These reports give you insights into the state of your APIs, including tests, documentation, and monitoring coverage. They also enable you to track performance and SLA adherence.
 
 Access your reports in your [Postman reports dashboard](https://go.postman.co/reports/overview).
 
-<img alt="The Postman reports dashboard" src="https://assets.postman.com/postman-docs/v10/dashboard-reports-overview-v10.jpg" width="1200px"/>
+<img alt="The Postman reports dashboard" src="https://assets.postman.com/postman-docs/v10/dashboard-reports-overview-v10-21.jpg"/>
 
 * [Getting started with reports](#getting-started-with-reports)
     * [Report availability](#report-availability)
@@ -27,6 +25,8 @@ Access your reports in your [Postman reports dashboard](https://go.postman.co/re
 * [Troubleshooting](#troubleshooting)
 
 ## Getting started with reports
+
+> [__Reports are available on all Postman Enterprise plans. The Public workspace metrics report is available on all Postman plans.__](https://www.postman.com/pricing)
 
 Reports give information about various aspects of your team and plan, including [member](/docs/reports/members-overview-reports/) and [content](/docs/reports/content-activity-reports/) activity, [API security](/docs/reports/api-security-reports/), and [billing and overage](/docs/reports/billing-overview-reports/) information.
 
@@ -49,7 +49,7 @@ Postman generates reports periodically but not in real time. You might experienc
 
 In a given report, you can only access report data that's available to you based on the level of access you have for the relevant collection, API, element, mock server, or monitor. For more information about element-based roles, see [Defining roles](/docs/collaborating-in-postman/roles-and-permissions/#element-based-roles).
 
-If you don't have permission to access an element, aggregate visualizations will still display the correct number of entities but won't provide you with the element name or other relevant information for the specific element.
+If you don't have permission to access an element, aggregate visualizations will still display the correct number of elements but won't provide you with the element name or other relevant information for the specific element.
 
 ![Report message that restricted data is hidden](https://assets.postman.com/postman-docs/reports-restricted-data-v9.jpg)
 
@@ -77,7 +77,7 @@ Reports have the following limitations:
 
 * You can't download or export your reports.
 * Postman reports only track data sent through the request builder, and not data sent through [Newman](/docs/collections/using-newman-cli/command-line-integration-with-newman/), [collection runs](/docs/collections/running-collections/intro-to-collection-runs/), or [monitors](/docs/monitoring-your-api/intro-monitors/). However, failed test runs do generate reports using collection runs.
-* You can't view the details of entities you don't have access to.
+* You can't view the details of elements you don't have access to.
 
 If there isn't any data in your reports, or your data is incomplete (for example, you have empty response times or sizes) this may be due to one of the following reasons:
 
