@@ -146,8 +146,12 @@ export const leftNavItems = [
       {
         name: 'Install and configure',
         subParentSlug: '/docs/getting-started/installation/',
-        slug: '/docs/getting-started/installation/installation-and-updates/',
+        slug: '/docs/getting-started/installation/install-overview/',
         subMenuItems2: [
+          {
+            name: 'Overview',
+            url: '/docs/getting-started/installation/install-overview/',
+          },
           {
             name: 'Installation and updates',
             url: '/docs/getting-started/installation/installation-and-updates/',
@@ -185,16 +189,28 @@ export const leftNavItems = [
             url: '/docs/getting-started/importing-and-exporting/importing-data/',
           },
           {
+            name: 'SoapUI import',
+            url: '/docs/getting-started/importing-and-exporting/importing-from-soapui/',
+          },
+          {
+            name: 'Hoppscotch import',
+            url: '/docs/getting-started/importing-and-exporting/importing-from-hoppscotch/',
+          },
+          {
+            name: 'Insomnia import',
+            url: '/docs/getting-started/importing-and-exporting/importing-from-insomnia/',
+          },
+          {
+            name: 'Thunder Client import',
+            url: '/docs/getting-started/importing-and-exporting/importing-from-thunder-client/',
+          },
+          {
             name: 'Git import',
             url: '/docs/getting-started/importing-and-exporting/importing-from-git/',
           },
           {
             name: 'New Relic import',
             url: '/docs/getting-started/importing-and-exporting/importing-from-new-relic/',
-          },
-          {
-            name: 'Insomnia import',
-            url: '/docs/getting-started/importing-and-exporting/importing-from-insomnia/',
           },
           {
             name: 'cURL command import',
@@ -270,6 +286,10 @@ export const leftNavItems = [
             name: 'Akamai Edgegrid',
             url: '/docs/sending-requests/authorization/akamai-edgegrid/',
           },
+          {
+            name: 'ASAP (Atlassian)',
+            url: '/docs/sending-requests/authorization/atlassian/',
+          },
         ],
       },
       {
@@ -286,7 +306,22 @@ export const leftNavItems = [
       },
       {
         name: 'Group values in environments',
-        url: '/docs/sending-requests/managing-environments/',
+        subParentSlug: 'environments',
+        slug: '/docs/sending-requests/environments/managing-environments/',
+        subMenuItems2: [
+          {
+            name: 'Create and use environments',
+            url: '/docs/sending-requests/environments/managing-environments/',
+          },
+          {
+            name: 'Set environment variables',
+            url: '/docs/sending-requests/environments/environment-variables/',
+          },
+          {
+            name: 'Manage team environments',
+            url: '/docs/sending-requests/environments/team-environments/',
+          },
+        ]
       },
       {
         name: 'Visualize request responses',
@@ -344,39 +379,35 @@ export const leftNavItems = [
         ],
       },
       {
-        name: 'Send GraphQL requests',
+        name: 'GraphQL',
         subParentSlug: 'graphql',
         slug: '/docs/sending-requests/graphql/graphql-overview/',
         subMenuItems2: [
           {
-            name: 'GraphQL queries',
+            name: 'Overview',
             url: '/docs/sending-requests/graphql/graphql-overview/',
           },
           {
-            name: 'GraphQL client',
-            url: '/docs/sending-requests/graphql/graphql-client-overview/',
-          },
-          {
-            name: 'GraphQL interface',
-            url: '/docs/sending-requests/graphql/graphql-client-interface/',
-          },
-          {
-            name: 'Create a GraphQL query',
+            name: 'Create GraphQL requests',
             url: '/docs/sending-requests/graphql/graphql-client-first-request/',
           },
           {
-            name: 'Make an HTTP call with GraphQL',
+            name: 'The GraphQL interface',
+            url: '/docs/sending-requests/graphql/graphql-client-interface/',
+          },
+          {
+            name: 'Other GraphQL requests',
             url: '/docs/sending-requests/graphql/graphql-http/',
           },
         ]
       },
       {
-        name: 'Send gRPC requests',
+        name: 'gRPC',
         subParentSlug: 'grpc',
         slug: '/docs/sending-requests/grpc/grpc-client-overview/',
         subMenuItems2: [
           {
-            name: 'Manage gRPC APIs',
+            name: 'Overview',
             url: '/docs/sending-requests/grpc/grpc-client-overview/',
           },
           {
@@ -418,8 +449,51 @@ export const leftNavItems = [
         ],
       },
       {
-        name: 'Send WebSocket requests',
-        url: '/docs/sending-requests/websocket/websocket/',
+        name: 'WebSocket',
+        subParentSlug: 'websocket',
+        slug: '/docs/sending-requests/websocket/websocket-overview/',
+        subMenuItems2: [
+          {
+            name: 'Overview',
+            url: '/docs/sending-requests/websocket/websocket-overview/'
+          },
+          {
+            name: 'Create a WebSocket request',
+            url: '/docs/sending-requests/websocket/create-a-websocket-request/'
+          },
+          {
+            name: 'Create a Socket.IO request',
+            url: '/docs/sending-requests/websocket/create-a-socketio-request/'
+          },
+          {
+            name: 'Work with WebSocket messages',
+            url: '/docs/sending-requests/websocket/work-with-websocket-messages/'
+          },
+          {
+            name: 'Listen to Socket.IO events',
+            url: '/docs/sending-requests/websocket/listen-to-socketio-events/'
+          },
+          {
+            name: 'Use variables in WebSocket requests',
+            url: '/docs/sending-requests/websocket/use-variables-with-websocket/'
+          },
+          {
+            name: 'Add details to a WebSocket request',
+            url: '/docs/sending-requests/websocket/add-details-websocket/'
+          },
+          {
+            name: 'Save WebSocket requests',
+            url: '/docs/sending-requests/websocket/save-websocket-requests/'
+          },
+          {
+            name: 'Document WebSocket requests',
+            url: '/docs/sending-requests/websocket/document-websocket-requests/'
+          },
+          {
+            name: 'Troubleshoot WebSocket requests',
+            url: '/docs/sending-requests/websocket/troubleshoot-websocket-requests/'
+          },
+        ],
       },
       {
         name: 'Send MQTT client requests',
@@ -959,6 +1033,10 @@ export const leftNavItems = [
             url: '/docs/collaborating-in-postman/public-api-network/sharing-your-workspace/',
           },
           {
+            name: 'Maintain APIs in your public workspace',
+            url: '/docs/collaborating-in-postman/public-api-network/maintain-api-in-workspace/',
+          },
+          {
             name: 'Sync APIs with your public workspace',
             url: '/docs/collaborating-in-postman/public-api-network/sync-api-with-workspace/',
           },
@@ -1018,8 +1096,12 @@ export const leftNavItems = [
       {
         name: 'Develop an API',
         subParentSlug: 'developing-an-api',
-        slug: '/docs/designing-and-developing-your-api/developing-an-api/defining-an-api/',
+        slug: '/docs/designing-and-developing-your-api/developing-an-api/develop-an-api/',
         subMenuItems2: [
+          {
+            name: 'Overview',
+            url: '/docs/designing-and-developing-your-api/developing-an-api/develop-an-api/',
+          },
           {
             name: 'Manage API definitions',
             url: '/docs/designing-and-developing-your-api/developing-an-api/defining-an-api/',
@@ -1091,8 +1173,12 @@ export const leftNavItems = [
       {
         name: 'Mock an API',
         subParentSlug: 'mocking-data',
-        slug: '/docs/designing-and-developing-your-api/mocking-data/setting-up-mock/',
+        slug: '/docs/designing-and-developing-your-api/mocking-data/mock-an-api/',
         subMenuItems2: [
+          {
+            name: 'Overview',
+            url: '/docs/designing-and-developing-your-api/mocking-data/mock-an-api/',
+          },
           {
             name: 'Set up mock servers',
             url: '/docs/designing-and-developing-your-api/mocking-data/setting-up-mock/',
@@ -1216,7 +1302,7 @@ export const leftNavItems = [
     url: '/docs/administration/admin-overview/',
     subMenuItems1: [
       {
-        name: 'Admin overview',
+        name: 'Overview',
         url: '/docs/administration/admin-overview/',
       },
       {
@@ -1349,7 +1435,7 @@ export const leftNavItems = [
         slug: '/docs/administration/domain-verification-and-capture/domain-capture-overview/',
         subMenuItems2: [
           {
-            name: 'Verify and capture domains',
+            name: 'Overview',
             url: '/docs/administration/domain-verification-and-capture/domain-capture-overview/',
           },
           {
@@ -1410,11 +1496,11 @@ export const leftNavItems = [
             url: '/docs/api-governance/api-definition/api-definition-warnings/',
           },
           {
-            name: 'OpenAPI 3.0 rules',
+            name: 'OpenAPI 3 rules',
             url: '/docs/api-governance/api-definition/openapi3/',
           },
           {
-            name: 'OpenAPI 2.0 rules',
+            name: 'OpenAPI 2 rules',
             url: '/docs/api-governance/api-definition/openapi2/',
           },
         ],
@@ -1494,6 +1580,10 @@ export const leftNavItems = [
         url: '/docs/reports/api-gov-reports/',
       },
       {
+        name: 'Public workspace metrics report',
+        url: '/docs/reports/public-workspace-metrics-reports/',
+      },
+      {
         name: 'Billing overview report',
         url: '/docs/reports/billing-overview-reports/',
       },
@@ -1518,7 +1608,7 @@ export const leftNavItems = [
         slug: '/docs/developer/postman-api/intro-api/',
         subMenuItems2: [
           {
-            name: 'Postman API endpoints',
+            name: 'Postman API overview',
             url: '/docs/developer/postman-api/intro-api/'
           },
           {
@@ -1581,8 +1671,12 @@ export const leftNavItems = [
       {
         name: 'Postman integrations',
         subParentSlug: 'available-integrations',
-        slug: '/docs/integrations/available-integrations/apimatic/',
+        slug: '/docs/integrations/available-integrations/postman-integrations/',
         subMenuItems2: [
+          {
+            name: 'All integrations',
+            url: '/docs/integrations/available-integrations/postman-integrations/',
+          },
           {
             name: 'APIMatic',
             url: '/docs/integrations/available-integrations/apimatic/',

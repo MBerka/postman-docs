@@ -124,7 +124,7 @@ Using the `pm.expect` syntax gives your test result messages a different format.
 
 > Use the __Run in Postman__ button in the [Intro to writing tests collection](https://documenter.postman.com/view/1559645/RzZFCGFR?version=latest) to import templates containing some example test scripts into Postman and experiment with the code.
 
-Your code can test the request [environment](/docs/sending-requests/managing-environments/), as in the following example:
+Your code can test the request [environment](/docs/sending-requests/environments/managing-environments/), as in the following example:
 
 ```js
 pm.test("environment to be production", function () {
@@ -186,9 +186,11 @@ To write a test with Postbot, do the following:
 1. In the upper right corner of the test editor, select the Postbot icon <img alt="Postbot icon" src="https://assets.postman.com/postman-docs/v10/icon-postbot-v10-16.jpg#icon" width="18px">.
 1. Enter your query as a simple text sentence, or select one of the suggested queries to tell Postbot what you need.
 
-      <img alt="Postbot writing a test" src="https://assets.postman.com/postman-docs/v10/postbot-add-test-v10-16.gif" width="300px" />
+      <img alt="Postbot writing a test" src="https://assets.postman.com/postman-docs/v10/postbot-add-test-v10-21-11-2.gif" />
 
 1. Select the play button. Postbot writes a test for you.
+
+You can also use Postbot to autocomplete test code. If you have a response available and type `pm.test`, Postbot suggests tests for your request. Select a test name, and Postbot inserts the code to validate your response.
 
 For more information on Postbot, visit [About Postbot](/docs/getting-started/basics/about-postbot/).
 

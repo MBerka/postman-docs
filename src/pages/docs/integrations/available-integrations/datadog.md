@@ -48,7 +48,7 @@ Setting up a Datadog integration requires you to get an API key from Datadog and
     <img alt="Home page and integrations" src="https://assets.postman.com/postman-docs/v10/home-integrations-v10.jpg" width="390px">
 
 1. Select **Browse All Integrations**.
-1. Search and select **[Datadog](https://postman.postman.co/integrations/service/datadog)**.
+1. Search and select **[Datadog](https://go.postman.co/integrations/service/datadog)**.
 
     > You can select **View all** for a list of all the integrations created by your team.
 
@@ -68,7 +68,7 @@ Setting up a Datadog integration requires you to get an API key from Datadog and
 
 1. Select **Add Integration**.
 
-> **You can view your configured integrations on the [Browse Integrations](https://go.postman.co/integrations/browse) page.** You can also view integrations that have been configured for a monitor by opening the monitor and selecting the information icon <img alt="Information icon" src="https://assets.postman.com/postman-docs/icon-information-v9-5.jpg#icon" width="16px"> in the right sidebar. Learn more about [viewing or editing integrations](/docs/integrations/intro-integrations/#viewing-or-editing-integrations).
+> **You can view your configured integrations on the [Browse Integrations](https://go.postman.co/integrations/browse) page.** You can also view integrations that have been configured for a monitor by opening the monitor and selecting the information icon <img alt="Information icon" src="https://assets.postman.com/postman-docs/icon-information-v9-5.jpg#icon" width="16px"> in the right sidebar. Learn more about [viewing or editing integrations](/docs/integrations/intro-integrations/#view-or-edit-integrations).
 
 ## Viewing data in Datadog
 

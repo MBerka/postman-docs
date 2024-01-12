@@ -28,13 +28,13 @@ Setting up a Keen integration requires a project ID and API key before configuri
 1. From the **[Home](https://go.postman.co/home)** page select **[Integrations](https://go.postman.co/integrations)**.
 1. Search and select **Keen**.
 1. Select **Add Integration**.
-1. On the [**Add integration - Configure**](https://postman.postman.co/integrations/service/keen_io/add/monitor_run_keen_io) page, enter your integration information to connect Keen IO to Postman Monitors.
+1. On the [**Add integration - Configure**](https://go.postman.co/integrations/service/keen_io/add/monitor_run_keen_io) page, enter your integration information to connect Keen IO to Postman Monitors.
 
     <img alt="Keen Add integration page" src="https://assets.postman.com/postman-docs/v10/keen-add-integration-configuration-v10.15.jpg" width="350px">
 
 1. Select **Add Integration**. You can send the results of multiple monitors to the same Keen IO collection.
 
-> **You can view your configured integrations on the [Browse Integrations](https://go.postman.co/integrations/browse) page.** You can also view integrations that have been configured for a monitor by opening the monitor and selecting the information icon <img alt="Information icon" src="https://assets.postman.com/postman-docs/icon-information-v9-5.jpg#icon" width="16px"> in the right sidebar. Learn more about [viewing or editing integrations](/docs/integrations/intro-integrations/#viewing-or-editing-integrations).
+> **You can view your configured integrations on the [Browse Integrations](https://go.postman.co/integrations/browse) page.** You can also view integrations that have been configured for a monitor by opening the monitor and selecting the information icon <img alt="Information icon" src="https://assets.postman.com/postman-docs/icon-information-v9-5.jpg#icon" width="16px"> in the right sidebar. Learn more about [viewing or editing integrations](/docs/integrations/intro-integrations/#view-or-edit-integrations).
 
 ## Viewing data in Keen IO
 

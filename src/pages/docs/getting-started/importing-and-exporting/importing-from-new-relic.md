@@ -15,11 +15,8 @@ contextual_links:
   - type: subtitle
     name: "Blog posts"
   - type: link
-    name: "Postman Essentials: Exploring the Collection Format"
-    url: "https://blog.postman.com/postman-essentials-exploring-the-collection-format/"
-  - type: link
-    name: "Differences between Postman Collections and the collection format"
-    url: "https://blog.postman.com/differences-between-postman-collections-and-collection-format/"
+    name: "Generate Postman Collections from New Relic services"
+    url: "https://blog.postman.com/generate-postman-collections-from-new-relic-services/"
 ---
 > Importing from New Relic is available on [Postman Free, Basic, and Professional plans](https://www.postman.com/pricing/).
 
@@ -44,7 +41,7 @@ Importing from New Relic requires you to get your API key (User key) from New Re
 
 ## Import New Relic data
 
-1. Select **Import** in the sidebar, then select **New Relic**.
+1. In Postman, select **Import > Other Sources > New Relic**.
 1. Enter the **API Key** (User key) you copied from New Relic, then select **Next**.
 
     > Postman saves your API key so you don't have to enter it again the next time you import data from New Relic.

@@ -7,14 +7,8 @@ contextual_links:
   - type: subtitle
     name: "Videos"
   - type: link
-    name: "Intro to Postman | Part 1: Send a Request"
-    url: "https://youtu.be/2oOSnxZ28fA"
-  - type: link
-    name: "How to use an API? | Intro to APIs Part 2"
-    url:  "https://youtu.be/woRuedXZyi4"
-  - type: link
-    name: "Postman Student Programs - Finding the right API for the job"
-    url:  "https://youtu.be/d6abDKrGFYU"
+    name: "Working With Your Team in Postman | The Exploratory"
+    url: "https://youtu.be/NwT062tYvzs?si=9skVeEglybbE8nyG"
   - type: subtitle
     name: "Blog posts"
   - type: link
@@ -46,7 +40,7 @@ Teams have _team workspaces_, which are shared workspaces where your team can wo
 * [Move elements into a team workspace](/docs/collaborating-in-postman/working-with-your-team/collaborating-in-team-workspaces/#moving-elements-to-team-workspaces) to share them with your team.
 * [Watch team workspaces](/docs/collaborating-in-postman/working-with-your-team/collaborating-in-team-workspaces/#watching-team-workspaces) to be notified when teammates make changes.
 * [Add comments](/docs/collaborating-in-postman/working-with-your-team/discussing-your-work/) to discuss work with your team.
-* [Share your work](https://learning.postman.com/docs/collaborating-in-postman/sharing/) with collaborators or external users.
+* [Share your work](/docs/collaborating-in-postman/sharing/) with collaborators or external users.
 
 By default, team workspaces are visible to everyone in your company or organization who uses Postman. You can use [private workspaces](/docs/collaborating-in-postman/using-workspaces/managing-workspaces/#accessing-private-workspaces) and [user groups](/docs/collaborating-in-postman/user-groups/) to control who can view or make changes in a workspace.
 
