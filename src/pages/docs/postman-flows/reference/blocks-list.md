@@ -1,27 +1,28 @@
 ---
 title: "Postman Flows blocks"
-updated: 2023-11-22
+updated: 2024-01-16
 ---
 
 The blocks available in Postman Flows are described below.
 
-* [Information blocks](#information-blocks)
+* [Data blocks](#data-blocks)
 * [Decision blocks](#decision-blocks)
 * [Repeating blocks](#repeating-blocks)
 * [Action blocks](#action-blocks)
 * [Output block](#output-blocks)
 
-## Information blocks
+## Data blocks
 
 ### Template
 
-<img alt="Template block" src="https://assets.postman.com/postman-labs-docs/all-blocks/template-block.png" width="245px"/>
+<img alt="Template block" src="https://assets.postman.com/postman-docs/v10/template-block-v10-15.jpg" width="309px"/>
 
-Enables large amounts of formatted text to be entered. The values in the variables section can be included in the text using `{{key}}` where `key` is the name of your variable.
+Enables you to enter and format large amounts of text. You can include variables and add data blocks like [**Select**](#select) and [**Get Variable**](#get-variable).
 
-**Variables** - Named information or assigned values that can be included in the text using the `{{key}}` format. Variables created in Flows aren't available to test scripts or other features outside Postman Flows.
+**Text box** - Enter text and variables here.
+**Variables** - Named information or assigned values you can include in the text using double curly braces like this: `{{your-variable}}`. Connect a block to the **param** input to create a new variable using a **Select** block, or select the **+** icon to create a new variable with any data block. Select the new variable's name to rename it. Variables created in Flows aren't available to test scripts or other features outside Postman Flows.
 
-**Out** - Sends the information entered in the text box to the next block.
+**Text** - This output sends the text in the text box to the next block.
 
 [Example](https://www.postman.com/postman/workspace/flows-snippets/flow/63bc94e8e308d202595085d7)
 
