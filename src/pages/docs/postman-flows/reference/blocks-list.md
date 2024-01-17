@@ -15,11 +15,12 @@ The blocks available in Postman Flows are described below.
 
 ### Template
 
-<img alt="Template block" src="https://assets.postman.com/postman-docs/v10/template-block-v10-15.jpg" width="309px"/>
+<img alt="Template block" src="https://assets.postman.com/postman-docs/v10/template-block-v10-15-2.jpg" width="309px"/>
 
 Enables you to enter and format large amounts of text. You can include variables and add data blocks like [**Select**](#select) and [**Get Variable**](#get-variable).
 
 **Text box** - Enter text and variables here.
+
 **Variables** - Named information or assigned values you can include in the text using double curly braces like this: `{{your-variable}}`. Connect a block to the **param** input to create a new variable using a **Select** block, or select the **+** icon to create a new variable with any data block. Select the new variable's name to rename it. Variables created in Flows aren't available to test scripts or other features outside Postman Flows.
 
 **Text** - This output sends the text in the text box to the next block.
@@ -28,7 +29,7 @@ Enables you to enter and format large amounts of text. You can include variables
 
 ### Get Variable
 
-<img alt="Get Variable block" src="https://assets.postman.com/postman-docs/v10/get-variable-block-v10.jpg" width="153px"/>
+<img alt="Get Variable block" src="https://assets.postman.com/postman-docs/v10/get-variable-block-v10-1.jpg" width="153px"/>
 
 Gets the specified variable's value from anywhere in the Flow.
 
@@ -44,17 +45,17 @@ Assigns a value to a variable that can then be accessed with the **Get Variable*
 
 ### Record
 
-<img alt="Record block" src="https://assets.postman.com/postman-labs-docs/all-blocks/record-block.png" width="245px"/>
+<img alt="Record block" src="https://assets.postman.com/postman-docs/v10/record-block-v10.jpg" width="133px"/>
 
-Structured information that can hold any of the other value block types or another record. Information is organized by having a key (the name assigned to the information) and a value.
+Information that is structured as key-value pairs. Select the **+** icon to add a key using a data block. Select the new key's name to rename it. All keys must be unique.
 
 [Example](https://www.postman.com/postman/workspace/flows-snippets/flow/63bc6eacead4e97c45493e9c)
 
 ### List
 
-<img alt="List block" src="https://assets.postman.com/postman-docs/v10/list-block-v10.jpg" width="159px"/>
+<img alt="List block" src="https://assets.postman.com/postman-docs/v10/list-block-v10-1.jpg" width="133px"/>
 
-Outputs the specified list of values. Each item can be any type of block, for example, a date block, a string, or a record. Using a **Select** block in a row of the list enables information from another block to be passed into the list.
+Outputs the specified list of values. Select the **+** icon to add an item to the list. Each item can be any type of block, for example, a **Date** block, a **String** block, or a **Record** block. Including a **Select** block in the list enables information from another block to be passed into the list.
 
 [Example](https://www.postman.com/postman/workspace/flows-snippets/flow/63bc9412ead4e97c45493eb0)
 
@@ -86,7 +87,7 @@ Outputs the current date and time.
 
 ### Select
 
-<img alt="Select block" src="https://assets.postman.com/postman-labs-docs/all-blocks/select-block.png" width="142px"/>
+<img alt="Select block" src="https://assets.postman.com/postman-docs/v10/select-block-v10.jpg" width="170px"/>
 
 Selects a specific part of the information output from another block. If the input information is from a **Send Request** block with a saved example, a drop-down will pop up that has all the information available to choose from and selecting that information will auto-fill the select block.
 
@@ -114,9 +115,9 @@ Outputs a null value.
 
 ### Number
 
-<img alt="Number block" src="https://assets.postman.com/postman-labs-docs/all-blocks/number-block.png" width="93px"/>
+<img alt="Number block" src="https://assets.postman.com/postman-docs/v10/number-block-v10.jpg" width="144px"/>
 
-A whole or decimal number that can be positive or negative.
+A whole or decimal number that can be positive or negative. Use the minus and plus icons to decrease and increase the number.
 
 [Example](https://www.postman.com/postman/workspace/flows-snippets/flow/63b8b417a365885b55bc51fd)
 
