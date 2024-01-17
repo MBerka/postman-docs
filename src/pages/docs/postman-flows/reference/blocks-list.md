@@ -151,18 +151,20 @@ The first block that runs when a Flow is run. When deploying to the cloud, [runn
 
 ### If
 
-<img alt="If block" src="https://assets.postman.com/postman-labs-docs/all-blocks/refactored-if-block.png" width="245px"/>
+<img alt="If block" src="https://assets.postman.com/postman-docs/v10/if-block-v10.jpg" width="361"/>
 
 <!-- vale Postman.Spelling = NO -->
-  Takes any number of variables and information, and takes a different branch depending on the result of the [FQL](/docs/postman-flows/flows-query-language/introduction-to-fql/) condition.
+  A logical gate that forks the path of your Flow based on the value of the boolean input. If the input evaluates to true, data is routed through the THEN output. If the input evaluates to false, data is routed through the ELSE output. The **If** block accepts variables and data. Use Flows Query Language ([FQL](/docs/postman-flows/flows-query-language/introduction-to-fql/)) queries to evaluate incoming data to true or false.
 
-  **Variables** - Named information or assigned values.
+  **variable** - Named information or assigned values. Select the **+** icon to create a new variable with any data block.
 
-  **Text entry block** - Freeform query using [FQL](/docs/postman-flows/flows-query-language/introduction-to-fql/) that evalutes to true or false.
+  **Text entry block** - Freeform query using [FQL](/docs/postman-flows/flows-query-language/introduction-to-fql/) that evalutes to true or false. You can use [Postbot](/docs/getting-started/basics/about-postbot/) to help create your query.
+
+  **Snippets** - Select a task from this dropdown list to configure the **If** block to achieve that task.
 
   **Data** - Receives information or an event from another block.
 
-  **Outputs** - Sends the information to either the True or False pathway depending on the value of the FQL condition.
+  **Outputs** - Sends the information to either the THEN (true) or ELSE (false) pathway depending on the value of the FQL condition.
 
   [Example](https://www.postman.com/postman/workspace/flows-snippets/flow/63bcba94f3155f2e86b54eb0)
 <!-- vale Postman.Spelling = YES -->
