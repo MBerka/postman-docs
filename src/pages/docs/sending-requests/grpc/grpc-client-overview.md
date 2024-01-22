@@ -46,10 +46,10 @@ As with other protocols in Postman, you can save gRPC requests in [collections](
 
 ## Next steps
 
-To learn how to set up and invoke gRPC requests in Postman, see [Create a gRPC request](/docs/sending-requests/grpc/grpc-request-interface/) and [Invoke a gRPC request](/docs/sending-requests/grpc/first-grpc-request/).
+To learn how to set up and invoke gRPC requests in Postman, see [Create a gRPC request in Postman](/docs/sending-requests/grpc/grpc-request-interface/) and [Invoke a gRPC request in Postman](/docs/sending-requests/grpc/first-grpc-request/).
 
 You can learn about testing your gRPC requests in [Test and debug values in gRPC requests using JavaScript in Postman](/docs/sending-requests/grpc/scripting-in-grpc-request/) and [Write tests for gRPC requests using JavaScript assertions in Postman](/docs/sending-requests/grpc/test-examples/).
 
 Simulating gRPC services is a valuable tool for testing and development. Learn more in [Create and use gRPC mock servers](/docs/sending-requests/grpc/using-grpc-mock/).
 
-You can use the [Postman API Builder](/docs/designing-and-developing-your-api/the-api-workflow/) to create a service definition using protobuf IDL and keep it as a single source of truth for your API project. See [Manage service definitions for gRPC requests in Postman](/docs/sending-requests/grpc/using-service-definition/) to learn more.
+You can use the [Postman API Builder](/docs/designing-and-developing-your-api/the-api-workflow/) to create a service definition using protobuf IDL and use it as a single source of truth for your API project. See [Manage service definitions for gRPC requests in Postman](/docs/sending-requests/grpc/using-service-definition/) to learn more.
