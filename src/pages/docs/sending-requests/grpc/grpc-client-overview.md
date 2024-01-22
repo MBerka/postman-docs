@@ -44,8 +44,8 @@ You can use the [Postman API Builder](/docs/designing-and-developing-your-api/th
 
 ## Next steps
 
-To get started with gRPC, see the following topics:
+To learn how to set up and invoke gRPC calls in Postman, see [Create a gRPC request](/docs/sending-requests/grpc/grpc-request-interface/) and [Invoke a gRPC request](/docs/sending-requests/grpc/first-grpc-request/).
 
-- [Using the gRPC request interface](/docs/sending-requests/grpc/grpc-request-interface/)
-- [Invoking your first gRPC request](/docs/sending-requests/grpc/first-grpc-request/)
-- [Working with service definitions](/docs/sending-requests/grpc/using-service-definition/)
+Once you've created your gRPC requests, you can learn about testing them in [Test and debug values in gRPC requests using JavaScript in Postman](/docs/sending-requests/grpc/scripting-in-grpc-request/) and [Write tests for gRPC requests using JavaScript assertions in Postman](/docs/sending-requests/grpc/test-examples/).
+
+Simulating gRPC services is a valuable tool for testing and development. Learn more in [Create and use gRPC mock servers](/docs/sending-requests/grpc/using-grpc-mock/).
