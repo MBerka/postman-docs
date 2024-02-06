@@ -84,24 +84,26 @@ You can install Postman on Linux from the [Snap](https://snapcraft.io/postman) s
 
 ### Create a Linux launcher icon
 
-To start the app from a launcher icon, install the desktop file, located in the bundle, into an `applications` subdirectory of a path contained in [`$XDG_DATA_DIRS`](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html) (for example `~/.local/share/applications/`):
-
-```shell
-install -t ~/.local/share/applications/ /</path/to/file>/Postman/app/resources/Postman.desktop
-```
-
-Enter the following content in the file, replacing `</path/to/file>` with the location of the file, and save it:
+To start the app from a launcher icon, you need a desktop file. This can be created in the bundle at `Postmand/app/resources/Postman.desktop`. Enter the following content in the file, replacing `</path/to/bundle>` with the path to the extracted bundle, and save it:
 
 ```shell
 [Desktop Entry]
 Encoding=UTF-8
 Name=Postman
-Exec=</path/to/file>/Postman/app/Postman %U
-Icon=</path/to/file>/Postman/app/resources/app/assets/icon.png
+Exec=</path/to/bundle>/Postman/app/Postman %U
+Icon=</path/to/bundle>/Postman/app/resources/app/assets/icon.png
 Terminal=false
 Type=Application
 Categories=Development;
 ```
+
+Save the file, then install it into an `applications` subdirectory of a path contained in [`$XDG_DATA_DIRS`](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html) (for example `~/.local/share/applications/`):
+
+```shell
+install -t ~/.local/share/applications/ /</path/to/bundle>/Postman/app/resources/Postman.desktop
+```
+
+The desktop file will need to be updated if the bundle is moved later.
 
 ### Linux installation notes
 
